@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    
+        *{padding: 0; margin: 0;
+        box-sizing: border-box;}
+        body {
+    height: 100%;
+}
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            
+
+        }
+        .childone{
+            background-color: #C8D9D5!important;
+            width: 60%;
+            height: 90vh;
+            display: grid;
+            place-items: center;
+
+            
+        }
+        .childtwo{
+            background-color: rgb(237, 124, 124);
+            width: 40%;
+            display: block;
+            height: 90vh;
+            padding-top: 20vh;
+            padding-left: 4%;
+            
+
+        }
+        .center{
+            display: grid;
+            place-items: center;
+            font-family: 'Merriweather',Georgia,"Times New Roman",serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: #000000!important;
+    line-height: 1.5em;
+    
+        }
+        h4{
+            color: white;
+            display: block;
+            
+            padding-top: auto;
+            padding-left: auto;
+            text-align: left;
+            font-size: small;
+        }
+        a{color: white;
+        font-size: small;}
+        h5{
+            color: white;
+            display: block;
+            
+            padding-top: auto;
+            padding-left: auto;
+            text-align: left;
+            font-size: small;
+        }
+        h2{
+            color: white;
+            display: block;
+            line-height: 150%;
+            
+            padding-top: auto;
+            padding-left: auto;
+            text-align: left;
+        }
+        .footer{
+            width: 100%;
+            height: 10vh;
+            background-color: rgb(185, 79, 79);
+        }
+        .padd{
+            padding-bottom: 15px;
+        }
+        .box{
+            height: 150px;
+            width: 10px;
+            background-color: black;
+            position: absolute;
+            left: 59.56%;
+            top: 30.56vh;
+        }
+        .circ{width: 30px; height: 30px;border: 4px solid #333; border-radius: 50%;
+            animation: circle-border-animation 1.5s ease-in-out infinite;
+             background-color: red; position: fixed; bottom: 20px; right: 20px; z-index: +1; display: grid; place-items: center; cursor: pointer;}
+       
+
+             @keyframes circle-border-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+             @media (max-width: 500px) {
+  .main{
+    display: block;
+    width: 100%;
+  }
+  .footer{width: 100%;}
+  .childone{width: 100%; height: 40vh;}
+  .childtwo{width: 100%;
+    display: block;
+    height: 70vh;
+    padding-top: 10px;
+}
+.chat{color: white; font-size: 10px;}
+.box{
+    
+    height: 10px;
+            width: 150px;
+            background-color: black;
+            position: absolute;
+            left: 30.56%;
+            top: 39.56vh;
+}
+    
+}
+
+    </style>
+
+
+
+    <div class="main">
+        <div class="childone">
+            <h1 class="center"> Get in Touch</h1>
+        </div>
+            <div class="childtwo">
+              <div class="padd">
+                <h2>Address</h2>
+                <h4>
+           <span>395 Jacob Street Hamilton Rd.</span></h4>
+          <h5> <span> Oshwa Ontario, LN3 4HG</span></h5>
+        </div>
+        <div class="padd">
+            <h2>Email</h2>
+            <h4>
+       <a href="mailto:primexx00@gmail.com">customersupport@iamstudent.uk</a></h4>
+      <h5> <a href="mailto:primexx00@gmail.com">priority.help@iamstudent.uk</a></h5>
+    
+
+            
+        </div>
+        <div class="padd">
+            <h2>Contact No.</h2>
+            <h4>
+       <a href="tel:+918196001530">+91 02 020 036  </span></h4>
+      <h5> <a href="tel:+918196001530">+91 01871 689983</span></h5>
+    
+
+            
+        </div>
+        </div>
+        <div class="footer">
+
+        </div>
+        <div class="box"></div>
+    </div>
+    <a href="#" onclick="openChat()">
+        <div class="circ"><span class="chat">chat</span></div>
+      </a>
+      <script>
+        function openChat() {
+          window.open("https://wa.me/918196001530?text=Hello%20dear", "ChatWindow", "width=400,height=400");
+        }
+        </script>
+</body>
+</html>
